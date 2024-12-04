@@ -22,5 +22,10 @@ pipeline {
         }
     }
   }
+  stage("Foo") {
+    steps {
+      sh "echo 'if the code is good this message gets printed'"
+    }
+  }
 }
 }
